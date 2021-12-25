@@ -15,21 +15,17 @@ public class BongoDramaSportsTest_01_PageObject extends PageObjectMain {
     @FindBy(xpath = "//header/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/input[1]")
     public WebElement search;
 
-    //header/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/input[1]
-
-    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/div[1]/div[1]")
+    @FindBy(xpath = "//div[@id='root']/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/div[1]/div[1]")
     public WebElement firstNews;
 
-    @FindBy(xpath = "//h5[contains(text(),'Ganjam 420')]")
-    public WebElement dramaName;
-    //h5[contains(text(),'Ganjam 420')]
+//    @FindBy(xpath = "//h5[contains(text(),'Ganjam 420')]")
+//    public WebElement dramaName;
 
-    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]/div[1]/div[1]")
+    @FindBy(xpath = "//div[@id='root']/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]/div[1]/div[1]")
     public WebElement thirdNews;
 
-    @FindBy(xpath = "//h5[contains(text(),\"Lionel Messi's PSG Press Conference\")]")
-    public  WebElement thirdNewsName;
-
+//    @FindBy(xpath = "//h4[contains(text(),\"Messi Unsure If His Record Seventh Ballon d'Or wil\")]")
+//    public WebElement thirdNewsName;
 
     @FindBy(xpath = "//button[contains(@title,'Play')]")
     public WebElement playAndPauseButton;

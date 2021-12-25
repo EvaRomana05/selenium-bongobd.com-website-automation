@@ -1,8 +1,36 @@
 # Selenium Java Web Automation
 
 ## Check out [BongoBd.com](https://www.bongobd.com) website automation.
+**TestCase 01: (Drama & Sports Test)**
+_Test-1_ 
+1. Go to BongoBd.com URL 
+2. From menu bar click Drama
+3. Search 420 
+4. From 420 drama list ,play 1st drama.
+5. Unit Testing Done.
 
+_Test-2_
+1. Go to BongoBd.com URL
+2. From menu bar click Sports
+3. Search messi
+4. From list, play 3rd news, pause & play.
+5. Check Unit Testing.
 
+**TestCase 02: (Movie Test)**
+_Test-1_
+1. Go to BongoBd.com URL
+2. From menu bar click Music
+3. Scroll Down & go to latest music.
+4. Play 4th movie.
+5. Check Unit Testing.
+
+**TestCase 03: (Movie Test)**
+_Test-1_
+1. Go to BongoBd.com URL
+2. From menu bar click Movies
+3. Scroll Down & go to tribute to salman shah.
+4. Play 1st movie.
+5. Check Unit Testing.
 
 This project using the following languages and frameworks:
 

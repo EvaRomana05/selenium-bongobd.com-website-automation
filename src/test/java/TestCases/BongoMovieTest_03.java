@@ -2,7 +2,6 @@ package TestCases;
 
 import DriverSetup.ChromeDriverSetup;
 import PageObject.BongoMovieTest_03_PageObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,7 +21,7 @@ public class BongoMovieTest_03 extends ChromeDriverSetup {
 
         //website title
         String title = driver.getTitle();
-        System.out.println("Website title is: "+title);
+        System.out.println("Website title is: " + title);
 
         BongoMovieTest_03_PageObject aBongoMovieTest_03_PageObject = new BongoMovieTest_03_PageObject(driver);
         aBongoMovieTest_03_PageObject.movieMenu.click();
@@ -30,24 +29,23 @@ public class BongoMovieTest_03 extends ChromeDriverSetup {
 
         //to perform Scroll on application using Selenium
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1250)", "");
+        js.executeScript("window.scrollBy(0,1350)", "");
         Thread.sleep(5000);
 
         aBongoMovieTest_03_PageObject.moviePlay.click();
-        Thread.sleep(20000);
+        Thread.sleep(40000);
 
         //Movie menu
         String test = aBongoMovieTest_03_PageObject.movieMenu.getText();
-        System.out.println("Test is: "+test);
+        System.out.println("Test is: " + test);
 
         //Movie Name
-        String movieName = aBongoMovieTest_03_PageObject.movie_Name.getText();
-        System.out.println("Movie name is: "+movieName);
+//        String movieName = aBongoMovieTest_03_PageObject.movie_Name.getText();
+//        System.out.println("Movie name is: "+movieName);
 
-        Assert.assertEquals(title,"BONGO | Watch Live Tv, Bangla Movies, Natoks Anytime Anywhere");
+        Assert.assertEquals(title, "BONGO | Watch Live Tv, Bangla Movies, Natoks Anytime Anywhere");
         Assert.assertEquals(test, "MOVIES");
-        Assert.assertEquals(movieName, "Mayer Odhikar");
-
+//        Assert.assertEquals(movieName, "Mayer Odhikar");
 
 
     }
