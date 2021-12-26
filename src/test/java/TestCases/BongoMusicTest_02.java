@@ -41,7 +41,7 @@ public class BongoMusicTest_02 extends ChromeDriverSetup {
         Thread.sleep(5000);
 
         aBongoMusicTestPageObject.forthMusicPlay.click();
-        Thread.sleep(20000);
+        Thread.sleep(10000);
 
         //Music Title
 //        String musicTitle = driver.getTitle();

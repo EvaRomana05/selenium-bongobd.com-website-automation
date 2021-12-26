@@ -25,7 +25,7 @@ public class BongoDramaSportsTest_01 extends ChromeDriverSetup {
 
         BongoDramaSportsTest_01_PageObject aBongoTestPageObject = new BongoDramaSportsTest_01_PageObject(driver);
         aBongoTestPageObject.dramaMenu.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         // Drama page Title
         String dramaPageTitle = driver.getTitle();
@@ -36,17 +36,17 @@ public class BongoDramaSportsTest_01 extends ChromeDriverSetup {
         System.out.println("Drama Menubar Name is: " + dramaMenuTest);
 
         aBongoTestPageObject.search.sendKeys("420");
-        Thread.sleep(15000);
+        Thread.sleep(5000);
 
         aBongoTestPageObject.search.sendKeys(Keys.ENTER);
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
         //Drama search title
         String dramasearchTitle = driver.getTitle();
         System.out.println("Drama Search Title is: " + dramasearchTitle);
 
         aBongoTestPageObject.firstNews.click();
-        Thread.sleep(25000);
+        Thread.sleep(40000);
 
         // Drama's Title
 //        String dramaTitle = driver.getTitle();
@@ -93,7 +93,7 @@ public class BongoDramaSportsTest_01 extends ChromeDriverSetup {
         Thread.sleep(15000);
 
         aBongoTestPageObject.search.sendKeys(Keys.ENTER);
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
         //Sports title search
         String sportsSearchTitle = driver.getTitle();
@@ -112,9 +112,9 @@ public class BongoDramaSportsTest_01 extends ChromeDriverSetup {
 //        System.out.println("Sports News Name is: " + sportsNewsName);
 
         aBongoTestPageObject.playAndPauseButton.click();
-        Thread.sleep(25000);
+        Thread.sleep(5000);
         aBongoTestPageObject.playAndPauseButton.click();
-        Thread.sleep(15000);
+        Thread.sleep(5000);
 
         Assert.assertEquals(websiteActualTitle, "BONGO | Watch Live Tv, Bangla Movies, Natoks Anytime Anywhere");
         Assert.assertEquals(sportPageTitle, "BONGO | Sports");

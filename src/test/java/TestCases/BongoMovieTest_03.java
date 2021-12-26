@@ -33,7 +33,7 @@ public class BongoMovieTest_03 extends ChromeDriverSetup {
         Thread.sleep(5000);
 
         aBongoMovieTest_03_PageObject.moviePlay.click();
-        Thread.sleep(40000);
+        Thread.sleep(20000);
 
         //Movie menu
         String test = aBongoMovieTest_03_PageObject.movieMenu.getText();
